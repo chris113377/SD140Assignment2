@@ -35,7 +35,7 @@ self.addEventListener('activate', function(event) {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
+          if (cacheName !== cacheName) {
             console.log('[Service Worker] Removing old cache.', cacheName);
             return caches.delete(cacheName);
           }
@@ -44,6 +44,8 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
+
+// cacheWhitelist.indexOf(cacheName) === -1
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(caches.match(event.request)
