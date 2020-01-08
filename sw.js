@@ -1,10 +1,10 @@
 const staticCacheName = 'v2';
 const filesToCache = [
   './',
-  'styles/test.css',
-  'styles/contact.css',
-  'styles/index.css',
-  'styles/normalize.css',
+  './styles/test.css',
+  './styles/contact.css',
+  './styles/index.css',
+  './styles/normalize.css',
   './index.html',
   './aboutus.html',
   './contact.html',
@@ -13,8 +13,7 @@ const filesToCache = [
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css",
   "https://placekitten.com/295/200",
   "https://placekitten.com/295/201",
-  "https://placekitten.com/295/203",
-  // "https://www.favicon.cc/logo3d/4759.png"
+  "https://placekitten.com/295/203"
 ];
 
 
@@ -35,7 +34,7 @@ self.addEventListener('activate', function(event) {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (cacheName !== cacheName) {
+          if (cacheName !== staticCacheName) {
             console.log('[Service Worker] Removing old cache.', cacheName);
             return caches.delete(cacheName);
           }
