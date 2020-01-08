@@ -1,0 +1,228 @@
+body {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #648880;
+}
+/*------------Header for all pages--------*/
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+}
+
+nav {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #293f50;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-width {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.right-nav {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.left-nav {
+  color: #648880;
+  font-size: 40px;
+  display: inline-block;
+  width: 160px;
+}
+
+.toprighttxt {
+  color: #648880;
+}
+
+.righttxt {
+  font-weight: 300;
+  font-size: 20px;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.linearheader {
+  height: 170px;
+  background-image: linear-gradient(to right, #a1d3b0, #f6f1d3);
+  text-align: center;
+  margin: auto;
+}
+
+.div1 {
+  width: 100%;
+  padding-top: 25px;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.headertext {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+/*---------------Css for Staff page----------*/
+.staffmain {
+  max-width: 960px;
+  margin: auto;
+}
+
+.member1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.staf1 {
+  display: inline-block;
+  width: 100%;
+  max-width: 520px;
+}
+.picbox1 {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #cedcd9;
+  width: 100%;
+  max-width: 270px;
+  height: 130px;
+  margin-top: 70px;
+}
+
+img {
+  border-radius: 100%;
+  width: 120px;
+  max-width: 100%;
+}
+.overlay1 {
+  position: absolute;
+  margin-top: -55px;
+  margin-left: 70px;
+}
+
+.overlay2 {
+  display: block;
+  width: 75px;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 90px;
+}
+
+/*-------------------Css for about us page----------*/
+.aboutusmain {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+}
+
+
+/*-------------footer---------*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  background: #293f50;
+  color: #6488808a;
+  padding: 30px;
+  font-size: 12px;
+}
+.footer-width {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+.right-footer {
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/*--------------------media Queries---------------*/
+@media only screen and (max-width: 850px) {
+  nav {
+    max-width: 100%;
+  }
+  .staffmain {
+    max-width: 80%;
+  }
+  .headertext {
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 25px;
+  }
+  .aboutusmain {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .headertext {
+    margin: 5px;
+    max-width: 90%;
+  }
+  .staffmain {
+    width: 100%;
+    margin: auto;
+  }
+.staf1 {
+    max-width: 600px;
+    width: 100%;
+  }
+.picbox1 {
+    max-width: 270px;
+    width: 100%;
+  }
+  .aboutusmain {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  nav {
+    max-width: 375px;
+  }
+  .headertext {
+    margin: 5px;
+    max-width: 90%;
+  }
+  .right-nav {
+    font-size: 13px;
+  }
+  .staffmain {
+    width: 100%;
+    max-width: 375px;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .staf1 {
+    width: 100%;
+    min-width: 375px;
+    ;
+    margin: 10px;
+  }
+}
