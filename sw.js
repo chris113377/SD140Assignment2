@@ -14,7 +14,7 @@ const filesToCache = [
   "https://placekitten.com/295/200",
   "https://placekitten.com/295/201",
   "https://placekitten.com/295/203",
-  "https://www.favicon.cc/logo3d/4759.png"
+  // "https://www.favicon.cc/logo3d/4759.png"
 ];
 
 
