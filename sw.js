@@ -28,8 +28,6 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('activate', function(event) {
   console.log('[Service Worker] Activating Service Worker ....', event);
-  const cacheWhitelist = [staticCacheName];
-
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
@@ -43,8 +41,6 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
-
-// cacheWhitelist.indexOf(cacheName) === -1
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(caches.match(event.request)
